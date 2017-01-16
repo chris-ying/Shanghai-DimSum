@@ -1,0 +1,428 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html {
+    position: relative;   /* sticky footer setup */
+    min-height: 100%;  
+}
+
+body {
+    margin-bottom: 60px;  /* footer height */
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.clearfix {
+    clear: both; 
+}
+
+.bg-black {
+    background: black url(../img/page_back.jpg);
+}
+
+.container {
+    width: 85%;  
+    margin:0 auto; 
+    background-color: white;
+    padding: 0px;
+    min-height: 90vh;
+}
+
+.title {
+    color: white; 
+    font-size: 3em; 
+    font-weight: 600;
+    background-color: rgba(255,115,0,0.7); 
+    margin: 40px 0px; 
+    padding: 30px 90px; 
+    display: inline-block; 
+    border-radius: 10px;
+}
+
+/* Navbar */
+nav { 
+    background: black; 
+}
+
+#logo {
+    float: left; 
+    margin: 5px 0px 5px 10px; 
+    padding: 2px; 
+    border: 2px solid white; 
+}
+
+#my-nav {
+    float: right;
+    margin-right: -30px;
+}
+
+#my-nav li {
+    display: inline-block; 
+}
+
+#my-nav li a {
+    color: white; 
+    text-decoration: none; 
+    font-size: 1.2em; 
+    padding: 20px 25px; 
+    text-shadow: 0 0 5px white;
+    margin-left: 2px;
+}
+
+#my-nav li a:hover {
+    color: white; 
+    text-decoration: none;
+    background-color: #ff7300;  
+    transition: all 0.5s;
+}
+
+#current-page {
+    background-color: #ff7300;
+}
+
+#nav-btn {
+    margin: 5px;
+}
+
+#menu-btn {
+    color: white;
+    z-index: 1;
+    font-size: 1.5em;
+}
+
+
+/*index page*/
+#cover {
+    background: white url(../img/back.jpg)no-repeat center center fixed; 
+    background-size: cover; 
+    padding-top: 180px; 
+    padding-bottom: 100px;
+    margin:0 auto;
+    border-bottom: 5px solid black;
+    height: 100vh;
+    width: 100%;
+    display: table;
+}
+
+#brand {
+    color: white; 
+    text-align: center; 
+    text-shadow: 0 0 15px grey;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#brand h1 {
+    font-size: 6.3em; 
+    font-weight: 600;
+    padding-bottom: 30px; 
+}
+
+#brand h2 {
+    font-size: 4em;
+    font-weight: 600;
+    font-family: 'Gentium Basic', serif;
+}
+
+#down {
+    margin-top: 80px;
+    font-size: 4em;
+    text-align: center;
+}
+
+#down a {
+    color: white;
+}
+
+#down a:hover {
+    opacity: 0.8;
+}
+
+#about {
+    background: white url(../img/kitchen.jpg)no-repeat center center fixed; 
+    background-size: cover; 
+    padding: 15px 0px; 
+    margin:0 auto;
+}
+
+#about-article {
+    width: 72%;
+    margin: 50px auto; 
+    padding: 40px 55px 30px 60px; 
+    background-color: rgba(255,115,0,0.8); 
+    color: white; 
+    border-radius: 15px;
+}
+
+#about-article h3 {
+    font-size: 2.8em; 
+    font-weight: 600;
+    text-align: center; 
+    padding-bottom: 20px; 
+    font-family: 'Gentium Basic', serif;
+}
+
+#about-article p {
+    font-size: 1.4em; 
+    padding-bottom: 10px;
+    line-height: normal;
+}
+
+.mobile-only {
+    display: none;
+}
+
+/*signature page*/
+#signature-heading { 
+    text-align: center; 
+    background: white url(../img/signature.jpg)no-repeat; 
+    background-size: 100%;
+}
+
+#dishes {
+    width: 95%;
+    margin: 0px auto;
+    padding-bottom: 30px;
+}
+
+#dishes h2 {
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center; 
+    margin: 30px 0px 15px 0px; 
+    font-family: 'Gentium Basic', cursive;
+}
+
+.dish {
+    padding:10px; 
+    border: 5px solid #ff7300; 
+}
+
+.responsive-img {
+    width:100%; 
+    height:auto; 
+}
+
+/* contact page */
+#contact-heading {
+    text-align: center;
+    background: white url(../img/dining.jpg)no-repeat; 
+    background-size: 100%;
+}
+
+#map {
+    display: block;
+    width: 80%;
+    height: 500px;
+    margin: 40px auto 25px auto;
+    border: 3px solid #ff7300; 
+    box-shadow: 3px 3px 3px #ccc;
+}
+
+#address {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#address p {
+    font-size: 1.8em; 
+    color: #ff7300; 
+    text-shadow: 0 0 1px #ff7300;
+}
+
+/* Back to top button */
+#top-btn-container {
+    display: block;
+}
+
+#top-btn {
+    float: right;
+    margin-top: -75px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    opacity: 0.8;
+    padding: 12px 20px;
+    background: rgba(255,115,0,0.7);
+    border-radius: 6px;
+    transition: all 0.5s;
+}
+
+#top-btn:hover {
+    opacity: 1;
+    background: rgba(255,115,0,0.9);
+}
+
+/* footer */
+footer {
+    position: absolute;
+    height: 60px;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: black;
+}
+
+footer ul {
+    list-style: none; 
+    padding-left: 0px;
+    margin: 12px;
+}
+
+footer ul li { 
+    display: inline-block; 
+    color: rgb(230, 230, 230);
+    padding: 5px 10px;
+}
+
+.bdr { 
+    border-right: 2px solid rgb(80,80,80); 
+}
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    
+    body {
+        font-size: 14px;
+    }
+    
+    #top-btn-container {
+        display: none;
+    }
+    
+    /*  index css */
+    #about-article {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    
+    body {
+        font-size: 12px;
+    }
+    
+    .container {
+        width: 90%;  
+    }
+    
+    #top-btn-container {
+        display: none;
+    }
+    
+    #menu-btn {
+        font-size: 2em;
+    }
+    
+    #my-nav {
+        padding-right: 40px;
+    }
+    
+    #my-nav li a {
+        padding: 10px;
+    }
+    
+    .title {
+        font-size: 2em; 
+        margin: 15px 0px; 
+        padding: 15px 30px;
+        border-radius: 8px;
+    }
+    
+    footer ul {
+        margin: 6px;
+    }
+    
+    footer ul li { 
+        display: block;
+        padding: 3px;
+    }
+    
+    .bdr { 
+        border: none;
+    }
+    
+    /*  index css */
+    #cover {
+        padding-top: 220px; 
+        padding-bottom: 160px;
+    }
+    
+    #brand h1 {
+        font-size: 4.5em;
+        padding-bottom: 20px;
+    }
+    
+    #brand h2 {
+        font-size: 3.5em;
+    }
+    
+    #about-article {
+        width: 90%;
+        margin: 30px auto;
+        padding: 30px 40px 20px 45px; 
+    }
+    
+    /*  signature css */
+    #dishes {
+        width: 85%;
+    }
+    
+    .dish {
+        padding: 5px; 
+        border: 3px solid #ff7300; 
+    }
+    
+    /*  contact css */
+    #map {
+        width: 90%;
+        height: 350px;
+        margin-top: 20px;
+    }
+    
+    #address p {
+        font-size: 1.5em; 
+    }
+    
+@media screen and (max-width: 414px) {
+    
+    #my-nav {
+        padding-right: 25px;
+    }
+    
+    #cover {
+        padding-top: 190px; 
+        padding-bottom: 130px;
+    }
+    
+    #brand h1 {
+        font-size: 4em;
+    }
+    
+    #brand h2 {
+        font-size: 3.2em;
+    }
+    
+    .mobile-only {
+        display: block;
+    }
+    
+    #no-pm {
+        padding: 0;
+        margin: 0;
+    }
+
+
+
+
+
+
