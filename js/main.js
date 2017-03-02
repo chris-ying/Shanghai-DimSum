@@ -1,5 +1,3 @@
-var map;
-
 $(document).ready(function(){
 	
     $("#down-btn").click(function() {
@@ -23,16 +21,12 @@ $(document).ready(function(){
 		return false;
 	});
 	
-    map = new GMaps({
-        el: '#map',
-        lat: 43.841668,
-        lng: -79.398993
-      });
-    
-    map.addMarker({
-        lat: 43.841668,
-        lng: -79.398993,
-        title: 'Shanghai DimSum'
-    });
+    $(function() {
+        $("#map").googleMap();
+        $("#map").addMarker({
+          zoom: 11,
+          coords: [43.841668, -79.398993], 
+        });
+    })
     
 });

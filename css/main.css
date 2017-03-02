@@ -22,10 +22,10 @@ body {
 
 .container {
     width: 85%;  
-    margin:0 auto; 
+    margin: 0 auto; 
     background-color: white;
     padding: 0px;
-    min-height: 90vh;
+    min-height: 100vh;
 }
 
 .title {
@@ -51,11 +51,6 @@ nav {
     border: 2px solid white; 
 }
 
-#my-nav {
-    float: right;
-    margin-right: -30px;
-}
-
 #my-nav li {
     display: inline-block; 
 }
@@ -72,36 +67,44 @@ nav {
 #my-nav li a:hover {
     color: white; 
     text-decoration: none;
-    background-color: #ff7300;  
+    background: #ff7300;  
     transition: all 0.5s;
 }
 
 #current-page {
-    background-color: #ff7300;
-}
-
-#nav-btn {
-    margin: 5px;
+    background: #ff7300;
 }
 
 #menu-btn {
     color: white;
-    z-index: 1;
-    font-size: 1.5em;
+    font-size: 2.5em;
 }
 
 
 /*index page*/
 #cover {
-    background: white url(../img/back.jpg)no-repeat center center fixed; 
-    background-size: cover; 
-    padding-top: 180px; 
-    padding-bottom: 100px;
-    margin:0 auto;
-    border-bottom: 5px solid black;
+    padding-top: 20vh; 
+    margin: 0 auto;
+    border-bottom: 2px solid rgb(30,30,30);
     height: 100vh;
     width: 100%;
     display: table;
+}
+
+#cover:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url(../img/back.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #brand {
@@ -174,9 +177,10 @@ nav {
 
 /*signature page*/
 #signature-heading { 
+    margin-top: 60px;
     text-align: center; 
     background: white url(../img/signature.jpg)no-repeat; 
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 
 #dishes {
@@ -199,15 +203,16 @@ nav {
 }
 
 .responsive-img {
-    width:100%; 
-    height:auto; 
+    width: 100%; 
+    height: auto; 
 }
 
 /* contact page */
 #contact-heading {
+    margin-top: 60px;
     text-align: center;
     background: white url(../img/dining.jpg)no-repeat; 
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 
 #map {
@@ -227,7 +232,7 @@ nav {
 }
 
 #address p {
-    font-size: 1.8em; 
+    font-size: 1.5em; 
     color: #ff7300; 
     text-shadow: 0 0 1px #ff7300;
 }
@@ -270,7 +275,7 @@ footer {
 footer ul {
     list-style: none; 
     padding-left: 0px;
-    margin: 12px;
+    padding-top: 15px;
 }
 
 footer ul li { 
@@ -279,11 +284,18 @@ footer ul li {
     padding: 5px 10px;
 }
 
+footer a {
+    color: rgb(250, 250, 250);
+}
+
+footer a:hover {
+    color: rgb(255,130,30);
+    text-decoration: none;
+}
+
 .bdr { 
     border-right: 2px solid rgb(80,80,80); 
 }
-
-
 
 /* ==========================================================================
    Media Queries
@@ -300,8 +312,77 @@ footer ul li {
     }
     
     /*  index css */
+    #brand {
+        font-size: 0.9em;
+    }
+    
     #about-article {
         width: 90%;
+    }
+    
+    .container {
+        min-height: 980px;
+    }
+    
+    #address p {
+        font-size: 1.2em; 
+    }
+    
+    footer ul li { 
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    nav {
+        background: rgba(20,20,20,0.95);
+    }
+    
+    #my-nav {
+        font-size: 1.3em;
+    }
+    
+    #my-nav li {
+        display: block; 
+        text-align: center;
+        padding: 5px;
+    }
+    
+    #my-nav li a {
+        text-shadow: none;
+    }
+    
+    #my-nav li a:hover {
+        background: none;  
+    }
+
+    #current-page {
+        background: none;
+    }
+    
+    .nav-border {
+        border-bottom: 1px solid rgba(80,80,80,0.3);
+    }
+    
+    #brand {
+        font-size: 0.65em;
+    }
+    
+    footer ul {
+        font-size: 16px;
+        margin: 6px;
+        padding-top: 0px;
+    }
+    
+    footer ul li { 
+        display: block;
+        padding: 3px;
+        font-size: 0.8em;
+    }
+    
+    .bdr { 
+        border: none;
     }
 }
 
@@ -318,52 +399,22 @@ footer ul li {
     #top-btn-container {
         display: none;
     }
-    
-    #menu-btn {
-        font-size: 2em;
-    }
-    
-    #my-nav {
-        padding-right: 40px;
-    }
-    
+
     #my-nav li a {
-        padding: 10px;
+        padding: 10px 15px;
     }
     
     .title {
         font-size: 2em; 
-        margin: 15px 0px; 
+        margin-top: 30px; 
+        margin-bottom: 20px; 
         padding: 15px 30px;
         border-radius: 8px;
     }
     
-    footer ul {
-        margin: 6px;
-    }
-    
-    footer ul li { 
-        display: block;
-        padding: 3px;
-    }
-    
-    .bdr { 
-        border: none;
-    }
-    
     /*  index css */
-    #cover {
-        padding-top: 220px; 
-        padding-bottom: 160px;
-    }
-    
     #brand h1 {
-        font-size: 4.5em;
         padding-bottom: 20px;
-    }
-    
-    #brand h2 {
-        font-size: 3.5em;
     }
     
     #about-article {
@@ -385,31 +436,31 @@ footer ul li {
     /*  contact css */
     #map {
         width: 90%;
-        height: 350px;
+        height: 390px;
         margin-top: 20px;
     }
     
+    .container {
+        min-height: 600px;
+    }
+    
     #address p {
-        font-size: 1.5em; 
+        font-size: 1.05em; 
     }
     
-@media screen and (max-width: 414px) {
+    footer ul {
+        font-size: 16px;
+    }
+}
     
-    #my-nav {
-        padding-right: 25px;
+@media screen and (max-width: 375px) {
+    
+    #brand {
+        font-size: 0.6em;
     }
     
-    #cover {
-        padding-top: 190px; 
-        padding-bottom: 130px;
-    }
-    
-    #brand h1 {
-        font-size: 4em;
-    }
-    
-    #brand h2 {
-        font-size: 3.2em;
+    #about-article h3 {
+        font-size: 2.4em;
     }
     
     .mobile-only {
@@ -420,7 +471,44 @@ footer ul li {
         padding: 0;
         margin: 0;
     }
+    
+    #map {
+        height: 320px;
+    }
+    
+    #address p {
+        font-size: 0.95em; 
+    }
+}
 
+@media screen and (max-width: 320px) {
+    
+    #my-nav li {
+        font-size: 0.8em;    
+    }
+    
+    #brand {
+        font-size: 0.5em;
+    }
+    
+    #about-article {
+        font-size: 0.8em;
+        padding: 30px 30px 20px 35px; 
+    }    
+        
+    .title {
+        font-size: 1.5em;
+    }
+    
+    #address {
+        padding: 0px 20px;
+    }
+    
+    #address p {
+        font-size: 1em;
+        margin-bottom: 5px;
+    }
+}
 
 
 
